@@ -1,0 +1,50 @@
+header {
+    background-color: var(--main);
+    border-bottom: solid 1px var(--white) ;
+    padding: 1.25rem 0;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+
+  
+  .header-container p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .header-container a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Inherits the color of the surrounding text */
+  }
+  
+  /* nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  } */
+  
+  .quick-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .quick-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .quick-links a:hover {
+    text-decoration: underline;
+  }
+  

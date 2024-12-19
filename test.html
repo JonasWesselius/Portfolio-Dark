@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="components/sidenav/hamburger.css" />
+    <link rel="stylesheet" href="colours.css">
+  </head>
+  <body>
+    <label class="hamburger-menu">
+      <input type="checkbox" />
+    </label>
+   
+    <aside class="sidebar">
+      <nav>
+        <div id="home" class="menu-item">
+          <a href="index.html">
+            <img src="images/icons/home-active.png" alt="icon" />
+            Home
+          </a>
+        </div>
+        <div id="projects" class="menu-item dropdown">
+          <a href="#">
+            <img src="images/icons/project.png" alt="icon" />
+            Projects
+          </a>
+          <div class="dropdown-content">
+            <a href="project1.html">Project 1</a>
+            <a href="project2.html">Project 2</a>
+            <a href="project3.html">Project 3</a>
+          </div>
+        </div>
+        <div id="learning-outcomes" class="menu-item dropdown">
+          <a href="#">
+            <img src="images/icons/lo.png" alt="icon" />
+            Learning Outcomes
+          </a>
+          <div class="dropdown-content">
+            <a href="lo1.html">LO 1</a>
+            <a href="lo2.html">LO 2</a>
+            <a href="lo3.html">LO 3</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+    <div class="overlay"></div>
+    <script src="components/sidenav/hamburger.js"></script>
+  </body>
+</html>

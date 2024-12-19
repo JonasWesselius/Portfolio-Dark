@@ -1,0 +1,114 @@
+/* General container styling */
+.projects-container {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Carousel styling */
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: visible; /* Allow overflow for side elements */
+    border: 2px solid var(--secondary);
+    padding: 1rem 0; /* Extra space for arrows and dots */
+}
+
+/* Ensure only the carousel track container clips */
+.carousel-track-container {
+    overflow: visible; /* Allow project boxes to expand outside bounds */
+    position: relative;
+}
+
+/* Hide slides that are not part of the visible range */
+.carousel-slide.hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0); /* Collapse hidden slides to avoid layout shifts */
+    transition: transform 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
+}
+
+/* Expanded project-box spilling beyond container */
+.carousel-slide.expanded .project-box {
+    position: relative;
+    z-index: 10;
+    height: 60vh; /* Allow to grow downward */
+    margin-top: 0;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-slide {
+    flex: 0 0 25%; /* 4 slides visible at once */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.project-box {
+    background-color: var(--accent);
+    border: solid 1px var(--secondary);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3vh;
+    height: 50vh;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide.expanded {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+/* Controls styling */
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.carousel-btn {
+    background-color: var(--main);
+    border: none;
+    color: var(--secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.carousel-nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.carousel-nav button {
+    background: var(--accent);
+    border: solid 1px var(--secondary);
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.carousel-nav button.active {
+    background: var(--secondary);
+}
+
+.project-box .button{
+    min-height: 1rem;
+    margin-top: 5rem;
+    padding: 1rem 3rem;
+}
+.project-box .button.hidden {
+    display: none;
+}

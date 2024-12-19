@@ -1,0 +1,38 @@
+#learning-outcomes .learning-outcomes-container {
+    text-align: center;
+    background-color: var(--accent);
+    padding: 5rem;
+    margin-top: 5rem;
+}
+
+.outcomes-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.learning-outcomes-container h2{
+    margin-bottom: 5rem;
+}
+.outcome {
+    width: 15vw;
+    height: 15vw;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--secondary);
+}
+.outcome p {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 900;
+    text-align: center;
+}
+.outcome a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    text-align: center;
+}
