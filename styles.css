@@ -106,3 +106,55 @@ body{
     line-height: 1.4;
     white-space: nowrap; 
 }
+#learning-outcomes .learning-outcomes-container {
+    text-align: center;
+    background-color: var(--accent);
+    padding: 5rem;
+    margin-top: 5rem;
+    max-width: 100%;
+}
+
+.outcomes-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.learning-outcomes-container h2{
+    margin-bottom: 5rem;
+}
+.outcome {
+    width: 15vw;
+    height: 15vw;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--secondary);
+}
+
+.outcome:hover,
+.outcome:focus {
+  border-color: var(--secondary);
+  box-shadow: var(--secondary) 0 4px 12px;
+  color: var(--action);
+  font-size: 18px;
+  transition: 0.3s;
+}
+.outcome:hover {
+    transform: translateY(-1px);
+  }
+  
+.outcome p {
+    text-decoration: none;
+    /* color: var(--white); */
+    font-weight: 900;
+    text-align: center;
+}
+.outcome a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    text-align: center;
+}
