@@ -3,6 +3,7 @@
     background-color: var(--accent);
     padding: 5rem;
     margin-top: 5rem;
+    max-width: 100%;
 }
 
 .outcomes-grid {
@@ -24,9 +25,22 @@
     align-items: center;
     border: 2px solid var(--secondary);
 }
+
+.outcome:hover,
+.outcome:focus {
+  border-color: var(--secondary);
+  box-shadow: var(--secondary) 0 4px 12px;
+  color: var(--action);
+  font-size: 18px;
+  transition: 0.3s;
+}
+.outcome:hover {
+    transform: translateY(-1px);
+  }
+  
 .outcome p {
     text-decoration: none;
-    color: var(--white);
+    /* color: var(--white); */
     font-weight: 900;
     text-align: center;
 }

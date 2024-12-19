@@ -4,6 +4,7 @@ body{
     color: var(--white);
     text-decoration: none;
     font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    max-width: 100%;
 }
 
 .introduction {
