@@ -94,6 +94,16 @@ ul{
     margin-right: 3rem;
     line-height: 1.6; 
 }
+.section .further-detail a {
+    text-decoration: none;
+    color: var(--highlight); 
+    transition: color 0.3s ease; 
+}
+
+.section .further-detail a:hover {
+    color: var(--secondary); 
+}
+
 
 .further-btn {
     font-weight: 550;
