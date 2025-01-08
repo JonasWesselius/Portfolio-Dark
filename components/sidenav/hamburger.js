@@ -47,3 +47,4 @@ document.addEventListener("DOMContentLoaded", () => {
     setActivePage("home");
   });
   
+// credit: https://www.youtube.com/watch?v=dAIVbLrAb_U
