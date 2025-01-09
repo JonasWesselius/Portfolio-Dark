@@ -137,10 +137,9 @@ body{
 .outcome:hover,
 .outcome:focus {
   border-color: var(--secondary);
-  box-shadow: var(--secondary) 0 4px 12px;
-  color: var(--action);
+  background-color: var(--secondary);
   font-size: 18px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .outcome:hover {
     transform: translateY(-1px);

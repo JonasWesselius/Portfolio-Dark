@@ -18,7 +18,7 @@
   padding: calc(1rem - 1px) calc(5rem - 1px);
   position: relative;
   text-decoration: none;
-  transition: all 250ms;
+  transition: all 500ms;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -29,8 +29,7 @@
 .button:hover,
 .button:focus {
   border-color: var(--secondary);
-  box-shadow: var(--secondary) 0 4px 12px;
-  color: var(--action);
+  background-color: var(--secondary);
 }
 
 .button:hover {
