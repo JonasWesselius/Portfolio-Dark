@@ -79,6 +79,13 @@ ul{
     text-align: center;
 }
 
+.section .further-detail h3 {
+    margin-bottom: 0rem;
+    margin-top: 1.5rem;
+    margin-left: 5rem;
+    color: var(--secondary);
+}
+
 .section .further-detail .underline {
     width: 20rem;
     height: 3px;
@@ -89,6 +96,7 @@ ul{
 .section .further-detail p {
     font-size: 16px;
     color: var(--white);
+    margin-top: 0;
     margin-bottom: 15px;
     margin-left: 5rem;
     margin-right: 3rem;
