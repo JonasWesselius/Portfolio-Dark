@@ -94,6 +94,10 @@ ul{
 }
 
 .section .further-detail p {
+  font-size: 12px;
+  font-weight: normal;
+}
+.thick{
     font-size: 16px;
     color: var(--white);
     margin-top: 0;

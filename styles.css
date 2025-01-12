@@ -130,15 +130,17 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: var(--white);
     align-items: center;
     border: 2px solid var(--secondary);
+    text-decoration: none;
 }
 
 .outcome:hover,
 .outcome:focus {
   border-color: var(--secondary);
   background-color: var(--secondary);
-  font-size: 18px;
+  font-size: 1.2rem;
   transition: 0.5s;
 }
 .outcome:hover {
@@ -147,9 +149,11 @@ body{
   
 .outcome p {
     text-decoration: none;
-    /* color: var(--white); */
-    font-weight: 900;
     text-align: center;
+    margin-top: 0;
+}
+.thick{
+    font-weight: 900;
 }
 .outcome a {
     text-decoration: none;
