@@ -94,10 +94,6 @@ ul{
 }
 
 .section .further-detail p {
-  font-size: 12px;
-  font-weight: normal;
-}
-.thick{
     font-size: 16px;
     color: var(--white);
     margin-top: 0;
@@ -106,10 +102,24 @@ ul{
     margin-right: 3rem;
     line-height: 1.6; 
 }
+
 .section .further-detail a {
     text-decoration: none;
     color: var(--highlight); 
     transition: color 0.3s ease; 
+}
+.section .further-detail ol {
+margin-left: 3rem;
+}
+
+.section .further-detail li {
+    font-size: 16px;
+    color: var(--white);
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    line-height: 1.6; 
 }
 
 .section .further-detail a:hover {
