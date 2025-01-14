@@ -1,39 +1,34 @@
-/* General container styling */
 .projects-container {
     text-align: center;
     padding: 2rem;
 }
 
-/* Carousel styling */
 .carousel {
     position: relative;
     width: 80%;
     margin: 0 auto;
-    overflow: visible; /* Allow overflow for side elements */
+    overflow: visible;
     border: 2px solid var(--secondary);
-    padding: 1rem 0; /* Extra space for arrows and dots */
+    padding: 1rem 0;
 }
 
-/* Ensure only the carousel track container clips */
 .carousel-track-container {
-    overflow: visible; /* Allow project boxes to expand outside bounds */
+    overflow: visible;
     position: relative;
 }
 
-/* Hide slides that are not part of the visible range */
 .carousel-slide.hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    transform: scale(0); /* Collapse hidden slides to avoid layout shifts */
+    transform: scale(0);
     transition: transform 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
 }
 
-/* Expanded project-box spilling beyond container */
 .carousel-slide.expanded .project-box {
     position: relative;
     z-index: 10;
-    height: 60vh; /* Allow to grow downward */
+    height: 60vh;
     margin-top: 0;
 }
 
@@ -43,23 +38,56 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    gap: 0;
 }
 
 .carousel-slide {
-    flex: 0 0 25%; /* 4 slides visible at once */
-    transition: transform 0.3s ease;
+    flex: 0 0 25%;
+    width: 25%;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .project-box {
     background-color: var(--accent);
     border: solid 1px var(--secondary);
     padding: 2rem;
+    width: 100%;
     text-align: center;
     margin-top: 3vh;
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide img {
+    width: 100%;
+    max-height: 30vh;
+    margin: auto;
+    border-radius: 1rem;
+    opacity: 70%;
+}
+
+.project-box .button {
+    min-height: 1rem;
+    margin-top: auto;
+    padding: 1rem 3rem;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.project-box .button.hidden {
+    display: none;
 }
 
 .carousel-slide.expanded {
@@ -67,7 +95,6 @@
     z-index: 10;
 }
 
-/* Controls styling */
 .carousel-controls {
     display: flex;
     align-items: center;
@@ -102,13 +129,4 @@
 
 .carousel-nav button.active {
     background: var(--secondary);
-}
-
-.project-box .button{
-    min-height: 1rem;
-    margin-top: 5rem;
-    padding: 1rem 3rem;
-}
-.project-box .button.hidden {
-    display: none;
 }

@@ -23,8 +23,8 @@ header {
     margin: 0;
   }
   .header-container a {
-    text-decoration: none; /* Removes the underline */
-    color: inherit; /* Inherits the color of the surrounding text */
+    text-decoration: none;
+    color: inherit; 
   }
   
   /* nav {
